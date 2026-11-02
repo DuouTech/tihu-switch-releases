@@ -1,13 +1,13 @@
 {
-  "version": "1.0.0",
-  "notes": "Tihu-Switch 1.0.0 Windows x64 正式版。\r\n\r\n- 绿野界面与透明图标；独立资料目录、协议、端口及更新签名。\r\n- 网页授权后保存配置，启用 Agent 仍由用户明确操作。\r\n- Agent 配置加入品牌所有权与外改检测；显式释放可保留外部修改，重启不自动恢复旧配置。\r\n- 使用固定共享核心 d0eedcb45b1885542cd945b7ab71509145e99569，保留 MIT 与第三方声明。\r\n",
-  "pub_date": "2026-11-02T11:04:26.861Z",
+  "version": "1.0.1",
+  "notes": "Tihu-Switch 1.0.1\n\n用量小票新增缓存命中率和模型明细两个可选项目，默认勾选。每个 Agent 可打印各模型记录的 Token 和费用。\n\nToken 打印达到 1 亿使用“亿”，不足 1 亿使用“万”，统一保留两位小数。\n\n小票按绿野参考样式调整，保留当前软件图标；优化总 Token 数字与单位的字体、字距和比例，底部仅保留右下角生成日期。\n\nWindows x64。\r\n",
+  "pub_date": "2026-11-02T14:56:10.014Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/DuouTech/tihu-switch-releases/releases/download/v1.0.0/Tihu-Switch_1.0.0_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUUUlxdGY0VFUyUEpEMFVaK05sMFNnUFVXMU9uSWswMy9qYTFHWmJJbmxVa1VCaTY0Sk9zZmpXaXdIRDZsdlV4VURPd1lUZDNUcnZRTXk0NXJUNGNKRUJRMGw4UEdqNmdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNjE3NDA0CWZpbGU6VGlodS1Td2l0Y2hfMS4wLjBfeDY0LXNldHVwLmV4ZQpqRjgxS3liYUl4VUZaMEJxT2YyY1ZrRW9LV0N4aWZJOWZrdUhQYUdqbjVVQjZuYjVFemEyRUluVW4yREdSTXBnWmFCVFZCbE94dFpxMkl2U0NwdmtEUT09Cg==",
-      "sha256": "9b02e731eec799e5cfef48b499f727de2f030326b7a6becaa4c08103fddcb8a6",
-      "size": 15149258
+      "url": "https://github.com/DuouTech/tihu-switch-releases/releases/download/v1.0.1/Tihu-Switch_1.0.1_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUUUlxdGY0VFUyUEtGVWRiSFk2MFBZM1dSRUhsdXdTOURibysrdTc4OWlYc2IvbFErZThmczhoZkFxVXZEMnBEWkI4TGc0bG9Oaks2TXpVblhIdE1KSW92eWxXT2dwS0FrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNjMxMzU5CWZpbGU6VGlodS1Td2l0Y2hfMS4wLjFfeDY0LXNldHVwLmV4ZQpLbUwrbXhmbTI3bk5qaGJnVkNMbzZ5dTlha0dHUG4ycFVwZ0VlWHB4ZERxWjhQRWUwVUM4R29ieXF0M0ZjeEk1bnc3NVlOdkU5VjZ5SXFweDdQdXNEZz09Cg==",
+      "sha256": "f2fec3d25da88a7806eed458bf1af19b7e195c73360de219f5e52820495b74f1",
+      "size": 15149531
     }
   }
 }
