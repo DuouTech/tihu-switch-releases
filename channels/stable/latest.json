@@ -1,13 +1,13 @@
 {
-  "version": "1.0.1",
-  "notes": "Tihu-Switch 1.0.1\n\n用量小票新增缓存命中率和模型明细两个可选项目，默认勾选。每个 Agent 可打印各模型记录的 Token 和费用。\n\nToken 打印达到 1 亿使用“亿”，不足 1 亿使用“万”，统一保留两位小数。\n\n小票按绿野参考样式调整，保留当前软件图标；优化总 Token 数字与单位的字体、字距和比例，底部仅保留右下角生成日期。\n\nWindows x64。\r\n",
-  "pub_date": "2026-11-02T14:56:10.014Z",
+  "version": "1.0.2",
+  "notes": "# Tihu-Switch 1.0.2\n\nWindows x64 当前用户安装版 Patch。\n\n- 移除继承的 CC Switch 赞助预设、促销文案、返佣与推广入口，并增加默认目录防回流检查。官方中立模板、自定义连接和已有保存供应商继续保留。\n- 选择性集成 CC Switch v4.0.25 的 Windows 表单、浏览器来源防护、路由兼容、Codex 并发与模型别名、Pi MCP、Qwen MaaS 等修复；并非全量合并上游。\n- 保留已合并的小票成果及本品牌身份、主题、资料目录、端口、独立更新源和签名信任根。本次不变更数据库 schema。\n\n升级前建议保留自己的资料备份。需要回退时，退出应用后安装保留的 1.0.1；恢复数据库前先退出应用，使用本品牌的一致性备份，勿混用其他品牌资料。\n\n安装包带 Tauri/minisign 更新签名；该签名不等同于 Windows Authenticode 证书签名。\n",
+  "pub_date": "2026-11-05T02:08:26.523Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/DuouTech/tihu-switch-releases/releases/download/v1.0.1/Tihu-Switch_1.0.1_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUUUlxdGY0VFUyUEtGVWRiSFk2MFBZM1dSRUhsdXdTOURibysrdTc4OWlYc2IvbFErZThmczhoZkFxVXZEMnBEWkI4TGc0bG9Oaks2TXpVblhIdE1KSW92eWxXT2dwS0FrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNjMxMzU5CWZpbGU6VGlodS1Td2l0Y2hfMS4wLjFfeDY0LXNldHVwLmV4ZQpLbUwrbXhmbTI3bk5qaGJnVkNMbzZ5dTlha0dHUG4ycFVwZ0VlWHB4ZERxWjhQRWUwVUM4R29ieXF0M0ZjeEk1bnc3NVlOdkU5VjZ5SXFweDdQdXNEZz09Cg==",
-      "sha256": "f2fec3d25da88a7806eed458bf1af19b7e195c73360de219f5e52820495b74f1",
-      "size": 15149531
+      "url": "https://github.com/DuouTech/tihu-switch-releases/releases/download/v1.0.2/Tihu-Switch_1.0.2_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUUUlxdGY0VFUyUEtPU3R5dUd2TnlrRENWNnVDcVg5N0VZcE9wVEM2ZVFFMEl6SjY2Q2M2cHlDK1VGb21oa3YzNlIxWTJHQ2lzNUpsRnZwMjN1UytXQlF5MDFZU0FEbFFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzODQ0NDY3CWZpbGU6VGlodS1Td2l0Y2hfMS4wLjJfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMC4yCldueVBrbFZ0ZEFnNlpNWDdXRDdiQm5Lbm9tM2JEempCV1d5bXp0U1JlSG1UZ1B1L1pvMHZtbDgvMWJIV09hb0h0aTluZzNKODFDSUpjSEFWVWtzVURnPT0K",
+      "sha256": "0c04fc76cdaa25e4fd5adef31147758f604aeb3941045d4e58e7aabd49f7f0bc",
+      "size": 15384071
     }
   }
 }
