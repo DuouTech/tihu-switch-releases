@@ -1,13 +1,13 @@
 {
-  "version": "1.0.0-rc.2",
-  "notes": "# Tihu-Switch 1.0.0-rc.2\n\nWindows x64 隔离验收预发布候选，使用独立的 Acceptance 应用身份、资料目录、协议和端口，用于更新与回归验收。\n\n- 使用已确认的透明鹈鹕图标。\n- 改善外部修改 Agent 配置后的恢复：可显式解除本应用管理并保留原文件；若仍含本地路由地址，会提示核对并重新配置，不把释放误报为恢复直连。\n- 固定共享核心提交：43c2f449fb6de426bdaeb4ad9149c1f3925cf500。\n\n仅提升 testing 渠道，stable 保持不变。安装包附带 Tauri updater 签名；安装版与真实更新验收结果单独记录。\n",
-  "pub_date": "2026-11-02T05:58:02.517Z",
+  "version": "1.0.2",
+  "notes": "# Tihu-Switch 1.0.2\n\nWindows x64 当前用户安装版 Patch。\n\n- 移除继承的 CC Switch 赞助预设、促销文案、返佣与推广入口，并增加默认目录防回流检查。官方中立模板、自定义连接和已有保存供应商继续保留。\n- 选择性集成 CC Switch v4.0.25 的 Windows 表单、浏览器来源防护、路由兼容、Codex 并发与模型别名、Pi MCP、Qwen MaaS 等修复；并非全量合并上游。\n- 保留已合并的小票成果及本品牌身份、主题、资料目录、端口、独立更新源和签名信任根。本次不变更数据库 schema。\n\n升级前建议保留自己的资料备份。需要回退时，退出应用后安装保留的 1.0.1；恢复数据库前先退出应用，使用本品牌的一致性备份，勿混用其他品牌资料。\n\n安装包带 Tauri/minisign 更新签名；该签名不等同于 Windows Authenticode 证书签名。\n",
+  "pub_date": "2026-11-05T02:08:26.523Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/DuouTech/tihu-switch-releases/releases/download/v1.0.0-rc.2/Tihu-Switch_1.0.0-rc.2_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUUUlxdGY0VFUyUEQ2QmppNnJ5OG1HQkVRZHVLcWsyeGdpaTJzNGVYUHpXTmxXUUNoUmM5SVorR2RYTFR5Tk44aWF4SU5BNS94MTY4U3I5MTJEOE96VlkrR054YmdUMmdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNTk4ODAyCWZpbGU6VGlodS1Td2l0Y2ggQWNjZXB0YW5jZV8xLjAuMC1yYy4yX3g2NC1zZXR1cC5leGUKWWpJbCtEUHZ5emlGdVZla1paU044V1RTZVd3aTBHRTg5NWJ2dUZWa3NuOUJyTHlTdTd4bURSRkI3WDhRU01HcFhRdVlkQTQ0WElSVzF0d2pzUUd3QlE9PQo=",
-      "sha256": "249bfb05fc5be1b364d6ea0628e6e0d0ad4e752d9a195afb8546185c1d145cb8",
-      "size": 15194058
+      "url": "https://github.com/DuouTech/tihu-switch-releases/releases/download/v1.0.2/Tihu-Switch_1.0.2_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUUUlxdGY0VFUyUEtPU3R5dUd2TnlrRENWNnVDcVg5N0VZcE9wVEM2ZVFFMEl6SjY2Q2M2cHlDK1VGb21oa3YzNlIxWTJHQ2lzNUpsRnZwMjN1UytXQlF5MDFZU0FEbFFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzODQ0NDY3CWZpbGU6VGlodS1Td2l0Y2hfMS4wLjJfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMC4yCldueVBrbFZ0ZEFnNlpNWDdXRDdiQm5Lbm9tM2JEempCV1d5bXp0U1JlSG1UZ1B1L1pvMHZtbDgvMWJIV09hb0h0aTluZzNKODFDSUpjSEFWVWtzVURnPT0K",
+      "sha256": "0c04fc76cdaa25e4fd5adef31147758f604aeb3941045d4e58e7aabd49f7f0bc",
+      "size": 15384071
     }
   }
 }
