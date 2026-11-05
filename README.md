@@ -1,8 +1,10 @@
 # Tihu-Switch 官方发行
 
-当前正式版：[Tihu-Switch 1.0.0](https://github.com/DuouTech/tihu-switch-releases/releases/tag/v1.0.0)。下载 [Windows x64 当前用户级安装包](https://github.com/DuouTech/tihu-switch-releases/releases/download/v1.0.0/Tihu-Switch_1.0.0_x64-setup.exe)。
+当前正式版：[Tihu-Switch 1.0.2](https://github.com/DuouTech/tihu-switch-releases/releases/tag/v1.0.2)。下载 [Windows x64 当前用户级安装包](https://github.com/DuouTech/tihu-switch-releases/releases/download/v1.0.2/Tihu-Switch_1.0.2_x64-setup.exe)。
 
-安装包 SHA256：`9b02e731eec799e5cfef48b499f727de2f030326b7a6becaa4c08103fddcb8a6`。公开安装器及签名已经匿名下载核对，并通过独立 Tauri/minisign 验签；[stable 更新清单](https://raw.githubusercontent.com/DuouTech/tihu-switch-releases/main/channels/stable/latest.json)使用 Tihu 独立签名及发行源。安装器没有 Windows Authenticode 发布者证书签名，minisign 不等于 Authenticode。
+安装包 SHA256：`0c04fc76cdaa25e4fd5adef31147758f604aeb3941045d4e58e7aabd49f7f0bc`。公开安装器及签名已经匿名下载核对，并通过独立 Tauri/minisign 验签；[stable 更新清单](https://raw.githubusercontent.com/DuouTech/tihu-switch-releases/main/channels/stable/latest.json)使用 Tihu 独立签名及发行源。安装器没有 Windows Authenticode 发布者证书签名，minisign 不等于 Authenticode。
+
+1.0.2 移除继承的赞助推荐、促销与返佣入口，保留鹈鹕快速配置、官方中立模板、自定义与已保存连接，以及 1.0.1 小票成果。共享核心选择性集成 CC Switch v4.0.25 的 Windows、路由兼容、Codex 与 Pi MCP 等修复，并非全量合并；没有新增数据库 schema。
 
 Tihu 使用独立应用身份、`.tihu-switch` 资料目录和 `tihu-switch://` 协议，默认本地路由端口为 15723。与 Duou 共存时，接管同一个 Agent 前须先退出原路由或明确释放控制权；释放会保留原文件，不等于已恢复直连。启用新配置仍由用户明确操作。
 
