@@ -1,13 +1,13 @@
 {
-  "version": "1.0.2",
-  "notes": "# Tihu-Switch 1.0.2\n\nWindows x64 当前用户安装版 Patch。\n\n- 移除继承的 CC Switch 赞助预设、促销文案、返佣与推广入口，并增加默认目录防回流检查。官方中立模板、自定义连接和已有保存供应商继续保留。\n- 选择性集成 CC Switch v4.0.25 的 Windows 表单、浏览器来源防护、路由兼容、Codex 并发与模型别名、Pi MCP、Qwen MaaS 等修复；并非全量合并上游。\n- 保留已合并的小票成果及本品牌身份、主题、资料目录、端口、独立更新源和签名信任根。本次不变更数据库 schema。\n\n升级前建议保留自己的资料备份。需要回退时，退出应用后安装保留的 1.0.1；恢复数据库前先退出应用，使用本品牌的一致性备份，勿混用其他品牌资料。\n\n安装包带 Tauri/minisign 更新签名；该签名不等同于 Windows Authenticode 证书签名。\n",
-  "pub_date": "2026-11-05T02:08:26.523Z",
+  "version": "1.0.3",
+  "notes": "# Tihu-Switch 1.0.3\n\n修正上一版仍显示厂商目录的问题：新增供应商只保留账号登录与自定义配置，移除模型厂商、第三方平台、云、本地和统一供应商预设目录，搜索也不再显示这些模板。旧跨应用连接仍可管理编辑，新建统一连接只提供手动配置。\n\n已保存连接、Key、模型、路由、小票和历史用量保留，不清洗用户数据库。继续保留原有品牌快速配置及既定 Agent 功能。本次没有新增上游移植，沿用此前 v4.0.25 的选择性集成。\n\nWindows x64 current-user NSIS；沿用本品牌正式更新签名与独立更新渠道。共享核心源码：adb7726ce80ad6eed020e01b29d01d88e5528ebb。\n\n回退：保留上一版 1.0.2 安装包；关闭应用后安装旧包。需要恢复数据时使用升级前本地一致备份，并先另存升级后数据。\n",
+  "pub_date": "2026-11-06T07:56:42.499Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/DuouTech/tihu-switch-releases/releases/download/v1.0.2/Tihu-Switch_1.0.2_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUUUlxdGY0VFUyUEtPU3R5dUd2TnlrRENWNnVDcVg5N0VZcE9wVEM2ZVFFMEl6SjY2Q2M2cHlDK1VGb21oa3YzNlIxWTJHQ2lzNUpsRnZwMjN1UytXQlF5MDFZU0FEbFFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzODQ0NDY3CWZpbGU6VGlodS1Td2l0Y2hfMS4wLjJfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMC4yCldueVBrbFZ0ZEFnNlpNWDdXRDdiQm5Lbm9tM2JEempCV1d5bXp0U1JlSG1UZ1B1L1pvMHZtbDgvMWJIV09hb0h0aTluZzNKODFDSUpjSEFWVWtzVURnPT0K",
-      "sha256": "0c04fc76cdaa25e4fd5adef31147758f604aeb3941045d4e58e7aabd49f7f0bc",
-      "size": 15384071
+      "url": "https://github.com/DuouTech/tihu-switch-releases/releases/download/v1.0.3/Tihu-Switch_1.0.3_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUUUlxdGY0VFUyUElnRzY3a0VwSGhYaThaK09xbE5UWFQxelArSHNwYXF2bkNSelovMWl5L3YvUXlxMThjKzNlYTkwUTFCNjliMEwrNFUyYnA0MGtLaDJzSVBaL0dQandvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzODkyOTQ0CWZpbGU6VGlodS1Td2l0Y2hfMS4wLjNfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMC4zCmNpckNSazBFN1M3RVk4Z2l6a3J0bUtVakE5T1VKMGl1Z2dHSitVQlE3RFg1MGNNN1lxckkzbXloa3BuQkRwQ1M1aHpXbll2NlpBQ1FMT1dKaW50TUNBPT0K",
+      "sha256": "0bcf276761599c37547cf00d7a146fbfa7acd2236352c859c60627318668db06",
+      "size": 15372709
     }
   }
 }
