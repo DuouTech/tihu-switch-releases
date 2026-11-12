@@ -1,13 +1,13 @@
 {
-  "version": "1.0.3",
-  "notes": "# Tihu-Switch 1.0.3\n\n修正上一版仍显示厂商目录的问题：新增供应商只保留账号登录与自定义配置，移除模型厂商、第三方平台、云、本地和统一供应商预设目录，搜索也不再显示这些模板。旧跨应用连接仍可管理编辑，新建统一连接只提供手动配置。\n\n已保存连接、Key、模型、路由、小票和历史用量保留，不清洗用户数据库。继续保留原有品牌快速配置及既定 Agent 功能。本次没有新增上游移植，沿用此前 v4.0.25 的选择性集成。\n\nWindows x64 current-user NSIS；沿用本品牌正式更新签名与独立更新渠道。共享核心源码：adb7726ce80ad6eed020e01b29d01d88e5528ebb。\n\n回退：保留上一版 1.0.2 安装包；关闭应用后安装旧包。需要恢复数据时使用升级前本地一致备份，并先另存升级后数据。\n",
-  "pub_date": "2026-11-06T07:56:42.499Z",
+  "version": "1.0.4",
+  "notes": "# Tihu-Switch 1.0.4\r\n\r\n已在同一隔离 Windows Server 2025 用户中完成旧正式版升级和真实 Agent 使用后的编辑验证。两款同时运行的双向交接、在途流完整结束、旧程序退出重开及旧格式待恢复事务均通过；本轮交付 Windows x64 当前用户 NSIS。\r\n\r\n- 启用后仍可编辑当前 Agent 配置。以最新文件为底合并受控字段，保留无关字段、注释与格式；真正同字段冲突显示必要差异，取消不改状态，也可保留外部修改。\r\n- 两款保持运行时，在当前软件明确启用即可交接，无需先释放配置锁或退出另一款。原代理保留已有连接；新配置由最后一次明确选择生效。短时跨进程锁、字段比较和交接记录防止旧程序退出、重开或恢复旧事务时回写覆盖；后台操作不能暗中抢回配置。\r\n- 新增独立 Copilot CLI 应用及自带 Key 配置，接入模型、MCP、Skills、提示词、会话、用量与深链；保留独立配置目录和两品牌受控字段合并、并发冲突与交接边界。自带 Key 不依赖 GitHub 登录；真实账号授权的验收状态另行列明。\r\n- 选择性同步 CC Switch v4.0.30：包含此前 4.0.29 的软链接写入、Windows/WSL 模型目录、第三方 Responses 工具回执、Kimi/DeepSeek 工具历史、会话缓存隔离、身份头、32k 输出、官方模型列表与 Claude 额度归属，并适配 4.0.30 的 Copilot 上下文/输入上限、Windows CLI 识别和窗口可见性等相关修复。隐私模式默认关闭。完整范围与排除项见共享核心 docs/UPSTREAM.md；不是全量上游同步。\r\n\r\n保留已有连接、Key、主题、小票、历史用量、无广告目录与品牌快速接入。Windows x64 current-user NSIS，使用本品牌既有独立更新公钥和 stable 地址；更新签名不等同 Windows Authenticode。\r\n\r\n回退基线为 1.0.3。先关闭应用并保留升级后资料，再用升级前一致备份恢复所需数据；不得以旧版恢复覆盖已交给另一品牌的 Agent 文件。实际安装、真实 Agent 和双品牌测试结果及最终源码/安装包 hash 见共享核心 docs/reports/双品牌配置合并与上游4029_2026-11-11.md。\r\n",
+  "pub_date": "2026-11-12T09:53:21.385Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/DuouTech/tihu-switch-releases/releases/download/v1.0.3/Tihu-Switch_1.0.3_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUUUlxdGY0VFUyUElnRzY3a0VwSGhYaThaK09xbE5UWFQxelArSHNwYXF2bkNSelovMWl5L3YvUXlxMThjKzNlYTkwUTFCNjliMEwrNFUyYnA0MGtLaDJzSVBaL0dQandvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzODkyOTQ0CWZpbGU6VGlodS1Td2l0Y2hfMS4wLjNfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMC4zCmNpckNSazBFN1M3RVk4Z2l6a3J0bUtVakE5T1VKMGl1Z2dHSitVQlE3RFg1MGNNN1lxckkzbXloa3BuQkRwQ1M1aHpXbll2NlpBQ1FMT1dKaW50TUNBPT0K",
-      "sha256": "0bcf276761599c37547cf00d7a146fbfa7acd2236352c859c60627318668db06",
-      "size": 15372709
+      "url": "https://github.com/DuouTech/tihu-switch-releases/releases/download/v1.0.4/Tihu-Switch_1.0.4_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUUUlxdGY0VFUyUEx2clZzUUNKYjFMckNsOW5iQXBQMXhBOWJINEVZaVhjbjRsaHlQQjNRU1NHSGNTWitNSHl0OEdtc082dlBMSWhZZ1RlVGxpWUR2djN3Ym5iZnV4U2dFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NDcyODI2CWZpbGU6VGlodS1Td2l0Y2hfMS4wLjRfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMC40CmdtK1dPNTBxOVpQam1UNjRXak5KbnFpTDErc3EyMGFLWGdYc1dlNy8vdk1BUEo3NStSSFovejRMM0NTc0dxQmo0TjNNMUtKQzNQZUJZNnlWZGR2eER3PT0K",
+      "sha256": "b062a9a604c281b2ee0355b5d2021ac505921267444f407001b55e3f14a3468d",
+      "size": 15625982
     }
   }
 }
