@@ -1,15 +1,32 @@
-# Tihu-Switch 官方发行
+# Tihu-Switch 官方二进制发行
 
-当前正式版：[Tihu-Switch 1.0.2](https://github.com/DuouTech/tihu-switch-releases/releases/tag/v1.0.2)。下载 [Windows x64 当前用户级安装包](https://github.com/DuouTech/tihu-switch-releases/releases/download/v1.0.2/Tihu-Switch_1.0.2_x64-setup.exe)。
+2026-11-17 验证快照：[Tihu-Switch 1.0.4](https://github.com/DuouTech/tihu-switch-releases/releases/tag/v1.0.4)，Windows x64 当前用户级安装包。
 
-安装包 SHA256：`0c04fc76cdaa25e4fd5adef31147758f604aeb3941045d4e58e7aabd49f7f0bc`。公开安装器及签名已经匿名下载核对，并通过独立 Tauri/minisign 验签；[stable 更新清单](https://raw.githubusercontent.com/DuouTech/tihu-switch-releases/main/channels/stable/latest.json)使用 Tihu 独立签名及发行源。安装器没有 Windows Authenticode 发布者证书签名，minisign 不等于 Authenticode。
+- [国内下载 CNB](https://cnb.cool/duoutech/tihu-switch/-/releases/latest/download/Tihu-Switch_x64-setup.exe)
+- [海外下载 GitHub](https://github.com/DuouTech/tihu-switch-releases/releases/latest/download/Tihu-Switch_x64-setup.exe)
+- 文件：`Tihu-Switch_1.0.4_x64-setup.exe`，15,625,982 字节。
+- SHA256：`b062a9a604c281b2ee0355b5d2021ac505921267444f407001b55e3f14a3468d`。
 
-1.0.2 移除继承的赞助推荐、促销与返佣入口，保留鹈鹕快速配置、官方中立模板、自定义与已保存连接，以及 1.0.1 小票成果。共享核心选择性集成 CC Switch v4.0.25 的 Windows、路由兼容、Codex 与 Pi MCP 等修复，并非全量合并；没有新增数据库 schema。
+两平台分发同一份已签名安装器，保留原始 `.sig`、`SHA256SUMS`、版本说明和许可文件。GitHub 为正式发布主源，CNB 为国内下载镜像；不要把 Source code 压缩包或临时附件 URL 当作安装器。
 
-Tihu 使用独立应用身份、`.tihu-switch` 资料目录和 `tihu-switch://` 协议，默认本地路由端口为 15723。与 Duou 共存时，接管同一个 Agent 前须先退出原路由或明确释放控制权；释放会保留原文件，不等于已恢复直连。启用新配置仍由用户明确操作。
+客户端仍使用原有 [stable 更新清单](https://raw.githubusercontent.com/DuouTech/tihu-switch-releases/main/channels/stable/latest.json)及本品牌独立公钥。本次仅调整官网下载和发布镜像，Tauri/minisign 更新签名不等于 Windows Authenticode 发布者签名。
 
-当前平台的网页免填授权保持关闭，尚未完成受支持环境下的完整验收。可使用已验证的手动路径：安装 Tihu → 选择 Agent → 填写平台地址和自己保存的 Key → 获取实际可用模型并检测 → 保存 → 明确启用。保存配置不会自动接管 Agent；连接检测可能产生调用费用。参见[平台接入指南](https://api.tihujianzhi.com/buy/keys#guide)。
+Tihu-Switch 保留独立应用身份、已有资料和协议。1.0.4 / 4.6.3 的升级及两品牌配置交接说明以各自正式 Release 为准；不要依据旧版本说明覆盖用户配置。
 
-本仓库仅提供安装包、更新清单、校验和、发布说明和必要许可。私有应用源码、用户配置和凭据不在本仓库；GitHub 自动生成的源码归档仅包含这个公开发行仓库。仅发布 Windows x64，测试候选不是日常安装包。
+本仓库仅包含二进制发行相关资料和镜像维护工具，不包含应用私有源码、用户数据或密钥。保留 CC Switch 作者版权、MIT 许可与第三方署名。
 
-Tihu-Switch 与 Duou-Switch 共用一个固定核心，保留 CC Switch 的 MIT 许可、作者版权和第三方署名。
+## 发布维护
+
+CNB [同步分支](https://cnb.cool/duoutech/tihu-switch/-/tree/codex/github-release-sync)已提供每 30 分钟检查 GitHub 最新正式版与 stable 清单的配置；使用 CNB 自带的任务临时令牌，不依赖 GitHub Actions。仅在版本、平台、大小、SHA256、原始签名均匹配后补齐附件。同名资产冲突会失败，不覆盖或删除公开版本。
+
+官网使用永久链接，后续正常发布无需修改官网；同步失败时 CNB 保留上一个完整正式版。可用该分支的 `api_trigger` 手动执行，或以仅限本仓库 `repo-release:rw` 的安全凭据运行 `python sync_cnb.py --product tihu-switch --verify-downloads --report verified-release.json`。令牌通过 `CNB_TOKEN` 环境变量注入，不写入脚本、日志或仓库。
+
+2026-11-16 验证：手动 CNB 流水线已成功，现有安装器跳过，缺失附件已补齐且双源匿名下载哈希一致。定时任务同步接口要求 Master 及以上角色，当前 Developer 角色被拒绝；定时启用尚未验收，不宣称全自动运行。
+
+## 永久链接与任务状态（2026-11-17）
+
+固定名 `Tihu-Switch_x64-setup.exe` 是原签名安装器的逐字节副本，原版本文件和更新签名保留；别名校验独立保存在 `SHA256SUMS-downloads.txt`。上述大小/哈希仅对应验证快照，后续以当次正式 Release 为准。
+
+`codex/github-release-sync` 的每小时第 7、37 分钟定时任务已观测到真实成功，负责人 `cnb.dInoEWDGgGA`，两产品各自只操作本仓库。GitHub 匿名 API 曾间歇返回 403；失败会非零退出并记录日志，不提升不完整版本，下一周期继续检查。仅手动重新注册要求 Master，不代表 Developer 的既有定时任务没有运行。
+
+[构建记录](https://cnb.cool/duoutech/tihu-switch/-/builds)。后续正式发布必须生成固定名及独立校验文件，使用共享发布工具 prepare/publish/promote；不要仅手工补当前版本。维护者需合并发布工具 PR 后再从默认流程发布新版本；当前网站接入与安装器字节不依赖该合并。
