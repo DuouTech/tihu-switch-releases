@@ -1,13 +1,13 @@
 {
-  "version": "1.0.6",
-  "notes": "# Tihu-Switch 1.0.6\n\nWindows x64 安装包修复了 Antigravity 会话中 Gemini 4 Neon 的成本显示。低、中、高、超高档按同一标准 API 价格估算，每百万 Token 输入 3 美元、输出 15 美元、缓存命中 0.15 美元。Gemini 4 Hydrogen 使用独立费率 1.50、7.50、0.075 美元。后台目录同步保留手动定价和已删除模型，明确匹配的历史零成本记录会补算。订阅实际收费以账单为准。[Google 定价](https://aistudio.google.com/docs/pricing#gemini-4-neon)\n\n授权中心新增 Windows Antigravity、Gemini CLI、Kimi Code、WorkBuddy 原生登录入口，以及其他 Agent 的账号和连接设置。可刷新当前托管账号和原生额度，账号详情和额度在窄窗口中分行显示。Antigravity 换号由用户在官方 agy 中完成。\n\n选择性适配 CC Switch v4.0.37，保护损坏的供应商、MCP 和 Claude 配置，修复工具入参、IPv6 监听、故障转移和慢速 Skills 下载。后台可按设置自动下载，安装和强制重启均由用户确认，安装前会验签及备份。\n\n[国内下载](https://cnb.cool/duoutech/tihu-switch/-/releases/latest/download/Tihu-Switch_x64-setup.exe) · [GitHub 下载](https://github.com/DuouTech/tihu-switch-releases/releases/latest/download/Tihu-Switch_x64-setup.exe)\n",
-  "pub_date": "2026-11-21T06:49:59.552Z",
+  "version": "1.0.7",
+  "notes": "# Tihu-Switch 1.0.7\n\n补齐 CC Switch 4.0.38 的 243 条内置定价。本次新增 GPT-6.1 Terra、GPT-6.2 Sol、GPT-6.2 Astra、Kimi K3.1 Pro／HighSpeed 及其 Kimi Code 名称、Qwen4 Max，共 8 条。\n\nAntigravity 用量支持 Hydrogen 的超高档、分档模型和可识别的编排执行模型，以及 Gemini Flash 的分档模型和 Claude Thinking。升级后会补算仍保留且能明确匹配的零成本记录。手动定价、删除项和已有费用保留。用量显示 API 等价估算。[CC Switch v4.0.38](https://github.com/farion1231/cc-switch/releases/tag/v4.0.38) · [Google 定价](https://aistudio.google.com/docs/pricing#gemini-4-hydrogen)\n\n[国内下载](https://cnb.cool/duoutech/tihu-switch/-/releases/latest/download/Tihu-Switch_x64-setup.exe) · [GitHub 下载](https://github.com/DuouTech/tihu-switch-releases/releases/latest/download/Tihu-Switch_x64-setup.exe)\n",
+  "pub_date": "2026-11-21T16:15:26.144Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/DuouTech/tihu-switch-releases/releases/download/v1.0.6/Tihu-Switch_1.0.6_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUUUlxdGY0VFUyUEluQ3daQ1hMOUl2dmp2endFUXd0MGhTVkxuc2F6Z1UrcVRBRkxTRU9nNS9OSWRsNmxSblJWalFwQVM4ZWNTUW1jUlRubEw4NkFzQlBYdjNYNVlXZHc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MjQzNzk5CWZpbGU6VGlodS1Td2l0Y2hfMS4wLjZfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMC42CjJWVTlaOWZGQWtpbE5FVjNVNjBYOVpobTV5elpodjRHRFJJU0FJZlhwTkd4aVFLWFdCVTl2SUFDODBtSEZUVlVxOFdxQWhNc2Y1cU5QUzQzRDA0Y0J3PT0K",
-      "sha256": "661289a2a90a3f8996d16f60eee58ab202636e6f0f523aeda4123e521ea200ef",
-      "size": 15686569
+      "url": "https://github.com/DuouTech/tihu-switch-releases/releases/download/v1.0.7/Tihu-Switch_1.0.7_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUUUlxdGY0VFUyUElRN3hkdzFXZXBDcmlzTmp6ZVIzZWNDTkdUVE9pRDFxT2JhODJpaEptSjh3NHBIRUlwSVE1cUhVTUVZQlVmUEpLOWZVWHFxdDFsc1VjalNUcUVtVmdVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1Mjc3NzI1CWZpbGU6VGlodS1Td2l0Y2hfMS4wLjdfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMC43CllQMjJ4aUZ3NHo4ajNIcTk2VDNzYU1ZQ3NGdzRlV3dqbW5DeWNnVGxDTzA4NFRzeWtndTM5QjJMVkoxVUo3a2xhRzZWUzQ2aFBwV29NdklvL3ExN0R3PT0K",
+      "sha256": "e2a9a0cd9233045413b025e4bd61d43f5db848ae514376097a848a18828e0ef6",
+      "size": 15658868
     }
   }
 }
